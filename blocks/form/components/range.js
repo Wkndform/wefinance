@@ -1,9 +1,9 @@
- function updateBubble(input, element) {
+function updateBubble(input, element) {
     const step = input.step || 1;
     const max = input.max || 0;
     const min = input.min || 1;
     const value = input.value || 1;
-    const current = Math.ceil((value - min)/step);
+    const current = Math.ceil((value - min) / step);
     const total = Math.ceil((max - min) / step);
     const bubble = element.querySelector('.range-bubble');
     // during initial render the width is 0. Hence using a default here.
@@ -11,8 +11,8 @@
     const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
     bubble.innerText = `${value}`;
     const steps = {
-    '--total-steps': Math.ceil((max - min/step),
-    '--current-steps': Math.ceil((value - min)/step),
+    '--total-steps': Math.ceil((max - min) /    step),
+    '--current-steps': Math.ceil((value - min) / step),
     };
     const style = Object.entries(steps).map(([varName, varValue]) => `${varName}:${varValue}`).join(';');
     bubble.style.left = `calc(${left})`;
