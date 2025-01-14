@@ -11,12 +11,12 @@ function getFullName(firstname, lastname) {
 
 /**
  * Calculate the number of days between two dates.
- * @name days1 Calculate the number of days between two dates
+ * @name days Calculate the number of days between two dates
  * @param {*} endDate
  * @param {*} startDate
  * @returns {number} returns the number of days between two dates
  */
-function days1(endDate, startDate) {
+function days(endDate, startDate) {
   const start = typeof startDate === 'string' ? new Date(startDate) : startDate;
   const end = typeof endDate === 'string' ? new Date(endDate) : endDate;
 
