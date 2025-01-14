@@ -20,6 +20,7 @@ function updateBubble(input, element) {
 }
  
 export default async function decorate(fieldDiv, fieldJson) {
+  loadCSS('/blocks/form/components/range.css');
   console.log('RANGE DIV: ', fieldDiv);
   console.log('RANGE JSON: fieldJson', fieldJson);
   const input = fieldDiv.querySelector('input');
