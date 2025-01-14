@@ -20,7 +20,7 @@ element.setAttribute('style', style);
 }
 // eslint-disable-next-line no-unused-vars
 export default function decorateRange(fieldDiv, field) {
-loadCSS('/blocks/form/components/range/range.css');
+loadCSS('/blocks/form/components/range.css');
 const input = fieldDiv.querySelector('input');
 // modify the type in case it is not range.
 input.type = 'range';
