@@ -11,6 +11,7 @@ function getFullName(firstname, lastname) {
 
 /**
  * Calculate the number of days between two dates.
+ * @name days1 Calculate the number of days between two dates
  * @param {*} endDate
  * @param {*} startDate
  * @returns {number} returns the number of days between two dates
