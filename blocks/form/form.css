@@ -611,8 +611,8 @@ main .form .range-widget-wrapper.decorated input[type="range"]:focus {
     padding-bottom: 12px;
 }
  
-.range-widget-wrapper.decorated .range-min,
-.range-widget-wrapper.decorated .range-max {
+.range-wrapper.decorated .range-min,
+.range-wrapper.decorated .range-max {
     font-size: 14px;
     line-height: 22px;
     color: #494f50;
