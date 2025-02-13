@@ -69,6 +69,9 @@ export default async function componentDecorator(element, fd, container) {
   if (getCustomComponents().includes(type) || getOOTBComponents().includes(type)) {
     await loadComponent(type, element, fd, container);
   }
-
+if (fieldType === 'range') {
+const module = await import('./components/range/range.js');
+return module.default(element,fd);;
+}
   return null;
 }
